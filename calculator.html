@@ -16,11 +16,12 @@
             {
                 if(calculator.input.value == '')
                 {
-                    alert("Input kosong")
+                    alert("Input kosong");
                 }
                 else
                 {
-                    eval(calculator.input.value)
+                    calculator.result.value = eval(calculator.input.value);
+                    return calculator.result.value;
                 }
             }
         </script>
